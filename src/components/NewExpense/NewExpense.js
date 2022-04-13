@@ -10,6 +10,12 @@ const NewExpense = (props) => {
     props.onAddExpense(expenseData);
   }; 
 
+  let mode = "Add";
+
+  if (mode === "Add") {
+    return <div><button></button></div>
+  }
+
   return (
     <div className="new-expense">
       <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
